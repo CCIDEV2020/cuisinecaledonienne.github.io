@@ -1,0 +1,699 @@
+body {
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text-site {
+    color: #f16a30;
+    font-weight: 900;
+}
+
+.tailleTitlle {
+    font-size: 1.2em;
+}
+
+.text-site-hover:hover {
+    color: #e28a65;
+}
+
+
+/* scrool effect left and right*/
+
+.from-right,
+.from-left {
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.from-bottom {
+    opacity: 1;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.from-right {
+    transform: translate(50px, -30px);
+}
+
+.from-bottom {
+    transform: translate(0px, 30px);
+}
+
+.from-left {
+    transform: translate(-50px, -30px);
+}
+
+
+/* Navbar */
+
+.navBarGradient {
+    background: linear-gradient(to top, #394, #252323 02.2%, #000 71%, #000 266%);
+}
+
+
+/* jumbotron header */
+
+.jumbotronName {
+    margin-top: 3rem;
+    background: linear-gradient(to top, #335, #fff 0%, #EEE 91%, #333 125%);
+    background-image: url("../img/plats-cuisine-caledonienne.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.lienDecorationOff {
+    text-decoration: none !important;
+}
+
+.border-link-oronge {
+    border: 1px solid #F07037;
+    background-color: #f16a30;
+}
+
+.border-link-oronge:active {
+    background-color: #9e6b55;
+}
+
+.containerOpacity {
+    opacity: 0.83;
+    background-color: #fff;
+}
+
+.textOpacity {
+    margin: 1.5%;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.fontCuisine {
+    src: url('font/hotpizza.ttf');
+}
+
+.largeTexte {
+    font-size: larger !important;
+}
+
+
+/* Les meilleur cuisine calédonienne du moments */
+
+.container_title-h3 {
+    font-size: 1em;
+}
+
+.tailletitresecondaire-padding {
+    padding-top: 50px;
+}
+
+.p-justify {
+    text-align: justify;
+}
+
+.p-center {
+    text-align: center;
+}
+
+.bodycontainerImageEffect {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.containerImageEffect {
+    position: relative;
+    width: 150px;
+    margin-bottom: 80px;
+    background: rgba(0, 0, 0, 0);
+    transform: rotate(-30deg) skew(25deg) scale(.8);
+    transition: 0.5s;
+}
+
+.containerImageEffect img {
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.containerImageEffect:hover img:nth-child(4) {
+    transform: translate(160px, -160px);
+    opacity: 1;
+}
+
+.containerImageEffect:hover img:nth-child(3) {
+    transform: translate(120px, -120px);
+    opacity: .8;
+}
+
+.containerImageEffect:hover img:nth-child(2) {
+    transform: translate(80px, -80px);
+    opacity: .6;
+}
+
+.containerImageEffect:hover img:nth-child(1) {
+    transform: translate(40px, -40px);
+    opacity: .4;
+}
+
+.imageShadow {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: -1px 24px 18px #888888;
+}
+
+
+/* Coin des cuisine calédonienne */
+
+.container_card-body_button:hover {
+    color: white;
+}
+
+.backgroundGradient {
+    background: linear-gradient(to bottom, #333, #fff 0%, #eee 10%, #333 160%);
+}
+
+footer {
+    color: #fff;
+    position: fixed;
+    bottom: -15px;
+    width: 100%;
+    background-color: gray;
+}
+
+.boutonfooter {
+    background-color: #25C3F9;
+}
+
+/* IPADE */
+/* IPADE PRO  */
+
+@media only screen and (max-width: 1025px) {}
+
+/* IPADE */
+
+@media only screen and (max-width: 769px) {
+
+    /* Header */
+    .nave-mobile {
+        font-size: 1.1em;
+    }
+
+    .jumbotronName {
+        margin-top: 3.75rem;
+    }
+
+    .titre-mobile {
+        font-size: 2em;
+    }
+
+    .textOpacity {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .bouton-mobile {
+        font-size: 0.8em;
+    }
+
+    /* Main */
+    /* CSS Générique Main */
+    /* Grand Titre */
+    .title-catégorie-mobile {
+        font-size: 1.25em;
+    }
+
+    /* Meilleur recette */
+    .containerImageEffect {
+        width: 90px;
+    }
+
+    .meilleur-recette-title {
+        font-size: 2.89em;
+        text-align: center;
+    }
+
+    .image-mobile-position {
+        text-align: center;
+        margin-top: 16%;
+    }
+
+    .image-corection-placement-ipad {
+        /* margin-left: 15%; */
+    }
+
+    .meilleur-recette-sous-title {
+        text-align: center;
+    }
+
+    /* Artilcle */
+    /* (Propriétaire de larticle) */
+    .tailleTitlle {
+        font-size: 1em;
+    }
+
+    .title-article-mobile {
+        font-size: 1.5rem;
+    }
+
+    .lien-liste-artcle-mobile {
+        font-size: 0.6em;
+    }
+
+    /* Footer */
+    .tail-lien-mobile-footer {
+        font-size: 0.81em;
+    }
+}
+
+/* IPADE Surface DUO*/
+
+@media only screen and (max-width: 541px) {
+
+    /* Header */
+    .nave-mobile {
+        font-size: 1.1em;
+    }
+
+    .jumbotronName {
+        margin-top: 4.2rem;
+    }
+
+    .titre-mobile {
+        font-size: 2em;
+    }
+
+    .textOpacity {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .bouton-mobile {
+        font-size: 0.8em;
+    }
+
+    /* Main */
+    /* CSS Générique Main */
+    /* Grand Titre */
+    .title-catégorie-mobile {
+        font-size: 1.25em;
+    }
+
+    /* Meilleur recette */
+    .meilleur-recette-title {
+        font-size: 2.89em;
+        text-align: center;
+    }
+
+    .image-mobile-position {
+        text-align: center;
+        margin-top: 16%;
+    }
+
+    .image-corection-placement-ipad {
+        margin-left: 15%;
+    }
+
+    .meilleur-recette-sous-title {
+        text-align: center;
+    }
+
+    /* Artilcle */
+    /* (Propriétaire de larticle) */
+    .tailleTitlle {
+        font-size: 1em;
+    }
+
+    .title-article-mobile {
+        font-size: 1.5rem;
+    }
+
+    .lien-liste-artcle-mobile {
+        font-size: 0.6em;
+    }
+
+    /* Footer */
+    .tail-lien-mobile-footer {
+        font-size: 0.81em;
+    }
+}
+
+/* MOBILE */
+/* Mobile Iphone 6/7/8 Plus*/
+@media only screen and (max-width: 415px) {
+
+    /* Header */
+    .nave-mobile {
+        font-size: 0.6em;
+    }
+
+    .titre-mobile {
+        font-size: 2em;
+    }
+
+    .textOpacity {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .bouton-mobile {
+        font-size: 0.8em;
+    }
+
+    /* Main */
+    /* CSS Générique Main */
+    /* Grand Titre */
+    .title-catégorie-mobile {
+        font-size: 1.25em;
+    }
+
+    /* Meilleur recette */
+    .meilleur-recette-title {
+        font-size: 1.89em;
+        text-align: center;
+    }
+
+    .image-mobile-position {
+        text-align: center;
+        margin-top: 16%;
+    }
+
+    .meilleur-recette-sous-title {
+        text-align: center;
+    }
+
+    /* Artilcle */
+    /* (Propriétaire de larticle) */
+    .tailleTitlle {
+        font-size: 1em;
+    }
+
+    .title-article-mobile {
+        font-size: 1.5rem;
+    }
+
+    .lien-liste-artcle-mobile {
+        font-size: 0.6em;
+    }
+
+    /* Footer */
+    .tail-lien-mobile-footer {
+        font-size: 0.81em;
+    }
+}
+
+/* Mobile Pixel 2 Pixel 2xl*/
+@media only screen and (max-width: 412px) {
+
+    /* Header */
+    .nave-mobile {
+        font-size: 0.6em;
+    }
+
+    .titre-mobile {
+        font-size: 2em;
+    }
+
+    .textOpacity {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .bouton-mobile {
+        font-size: 0.8em;
+    }
+
+    /* Main */
+    /* CSS Générique Main */
+    /* Grand Titre */
+    .title-catégorie-mobile {
+        font-size: 1.25em;
+    }
+
+    /* Meilleur recette */
+    .meilleur-recette-title {
+        font-size: 1.89em;
+        text-align: center;
+    }
+
+    .image-mobile-position {
+        text-align: center;
+        margin-top: 16%;
+    }
+
+    .meilleur-recette-sous-title {
+        text-align: center;
+    }
+
+    /* Artilcle */
+    /* (Propriétaire de larticle) */
+    .tailleTitlle {
+        font-size: 1em;
+    }
+
+    .title-article-mobile {
+        font-size: 1.5rem;
+    }
+
+    .lien-liste-artcle-mobile {
+        font-size: 0.6em;
+    }
+
+    /* Footer */
+    .tail-lien-mobile-footer {
+        font-size: 0.81em;
+    }
+}
+
+/* Mobile Iphone 6/7/8 Iphone X*/
+@media only screen and (max-width: 376px) {
+
+    /* Header */
+    .nave-mobile {
+        font-size: 0.6em;
+    }
+
+    .titre-mobile {
+        font-size: 2em;
+    }
+
+    .bouton-mobile {
+        font-size: 0.8em;
+    }
+
+    /* Main */
+    /* CSS Générique Main */
+    /* Grand Titre */
+    .title-catégorie-mobile {
+        font-size: 1.25em;
+    }
+
+    /* Meilleur recette */
+    .meilleur-recette-title {
+        font-size: 1.89em;
+        text-align: center;
+    }
+
+    .image-mobile-position {
+        text-align: center;
+        margin-top: 16%;
+    }
+
+    .meilleur-recette-sous-title {
+        text-align: center;
+    }
+
+    /* Artilcle */
+    /* (Propriétaire de larticle) */
+    .tailleTitlle {
+        font-size: 1em;
+    }
+
+    .title-article-mobile {
+        font-size: 1.5rem;
+    }
+
+    .lien-liste-artcle-mobile {
+        font-size: 0.6em;
+    }
+
+    /* Footer */
+    .tail-lien-mobile-footer {
+        font-size: 0.81em;
+    }
+}
+
+/* Mobile Galaxy S5 / MotoG4 */
+@media only screen and (max-width: 360px) {
+
+    /* Header */
+    .nave-mobile {
+        font-size: 0.6em;
+    }
+
+    .titre-mobile {
+        font-size: 2em;
+    }
+
+    .bouton-mobile {
+        font-size: 0.8em;
+    }
+
+    /* Main */
+    /* CSS Générique Main */
+    /* Grand Titre */
+    .title-catégorie-mobile {
+        font-size: 1.25em;
+    }
+
+    /* Meilleur recette */
+    .meilleur-recette-title {
+        font-size: 1.89em;
+        text-align: center;
+    }
+
+    .meilleur-recette-sous-title {
+        text-align: center;
+    }
+
+    /* Artilcle */
+    /* (Propriétaire de larticle) */
+    .tailleTitlle {
+        font-size: 1em;
+    }
+
+    .title-article-mobile {
+        font-size: 1.5rem;
+    }
+
+    .lien-liste-artcle-mobile {
+        font-size: 0.6em;
+    }
+
+    /* Footer */
+    .tail-lien-mobile-footer {
+        font-size: 0.81em;
+    }
+}
+
+/* Mobile Iphone5/SE */
+@media only screen and (max-width: 320px) {
+
+    /* Header */
+    .nave-mobile {
+        font-size: 0.6em;
+    }
+
+    .titre-mobile {
+        font-size: 2em;
+    }
+
+    .bouton-mobile {
+        font-size: 0.8em;
+    }
+
+    /* Main */
+    /* CSS Générique Main */
+    /* Grand Titre */
+    .title-catégorie-mobile {
+        font-size: 1.25em;
+    }
+
+    /* Meilleur recette */
+    .meilleur-recette-title {
+        font-size: 1.89em;
+        text-align: center;
+    }
+
+    .meilleur-recette-sous-title {
+        text-align: center;
+    }
+
+    /* Artilcle */
+    /* (Propriétaire de larticle) */
+    .tailleTitlle {
+        font-size: 1em;
+    }
+
+    .title-article-mobile {
+        font-size: 1.5rem;
+    }
+
+    .lien-liste-artcle-mobile {
+        font-size: 0.6em;
+    }
+
+    /* Footer */
+    .tail-lien-mobile-footer {
+        font-size: 0.81em;
+    }
+}
+
+/* Mobile Galaxi Fold */
+@media only screen and (max-width: 280px) {
+
+    /* Header */
+    .nave-mobile {
+        font-size: 0.6em;
+    }
+
+    .titre-mobile {
+        font-size: 2em;
+    }
+
+    .bouton-mobile {
+        font-size: 0.8em;
+    }
+
+    /* Main */
+    /* CSS Générique Main */
+    /* Grand Titre */
+    .title-catégorie-mobile {
+        font-size: 1.25em;
+    }
+
+    /* Meilleur recette */
+    .meilleur-recette-title {
+        font-size: 1.89em;
+        text-align: center;
+    }
+
+    .meilleur-recette-sous-title {
+        text-align: center;
+    }
+
+    /* Artilcle */
+    /* (Propriétaire de larticle) */
+    .tailleTitlle {
+        font-size: 1em;
+    }
+
+    .title-article-mobile {
+        font-size: 1.5rem;
+    }
+
+    .lien-liste-artcle-mobile {
+        font-size: 0.6em;
+    }
+
+    /* Footer */
+    .tail-lien-mobile-footer {
+        font-size: 0.81em;
+    }
+
+    .descriptionGauche {
+        border-left: 1px solid gray;
+    }
+
+    .descriptionDroite {
+        border-right: 1px solid gray;
+    }
+}
