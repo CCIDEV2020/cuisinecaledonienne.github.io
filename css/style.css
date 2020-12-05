@@ -408,6 +408,14 @@ footer {
     .tail-lien-mobile-footer {
         font-size: 0.81em;
     }
+
+    .from-left {
+        transform: translate(0, 0);
+    }
+
+    .from-right {
+        transform: translate(0, 0);
+    }
 }
 
 /* Mobile Pixel 2 Pixel 2xl*/
@@ -471,6 +479,14 @@ footer {
     .tail-lien-mobile-footer {
         font-size: 0.81em;
     }
+
+    .from-left {
+        transform: translate(0, 0);
+    }
+
+    .from-right {
+        transform: translate(0, 0);
+    }
 }
 
 /* Mobile Iphone 6/7/8 Iphone X*/
@@ -529,6 +545,14 @@ footer {
     .tail-lien-mobile-footer {
         font-size: 0.81em;
     }
+
+    .from-left {
+        transform: translate(0, 0);
+    }
+
+    .from-right {
+        transform: translate(0, 0);
+    }
 }
 
 /* Mobile Galaxy S5 / MotoG4 */
@@ -582,6 +606,14 @@ footer {
     .tail-lien-mobile-footer {
         font-size: 0.81em;
     }
+
+    .from-left {
+        transform: translate(0, 0);
+    }
+
+    .from-right {
+        transform: translate(0, 0);
+    }
 }
 
 /* Mobile Iphone5/SE */
@@ -634,6 +666,14 @@ footer {
     /* Footer */
     .tail-lien-mobile-footer {
         font-size: 0.81em;
+    }
+
+    .from-left {
+        transform: translate(0, 0);
+    }
+
+    .from-right {
+        transform: translate(0, 0);
     }
 }
 
@@ -696,4 +736,13 @@ footer {
     .descriptionDroite {
         border-right: 1px solid gray;
     }
+
+    .from-left {
+        transform: translate(0, 0);
+    }
+
+    .from-right {
+        transform: translate(0, 0);
+    }
+
 }
